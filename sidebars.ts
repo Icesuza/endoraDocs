@@ -3,14 +3,14 @@ import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
-    'Introduction',
+    'introduction',
     {
       type: 'category',
       label: 'Get Start',
       items: [
-        'Schema Creation',
-        'Populate Data',
-        'API Generation',
+        'schema-creation',
+        'populate-data',
+        'api-generation',
       ],
     },
   ],

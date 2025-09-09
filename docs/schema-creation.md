@@ -1,5 +1,5 @@
 ---
-id: Schema Creation
+id: schema-creation
 title: Schema Creation
 ---
 

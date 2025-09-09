@@ -1,40 +1,30 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
-
+import styles from "./index.module.css";
+import FeatureCard from "../components/featuredCard/featuredCard";
+import { Database, Cloud, FileText } from "lucide-react";
 export default function Home() {
   return (
     <Layout title="Endora" description="Endora - Schema, Data & API Platform">
       <main>
         {/* Hero Section */}
-        <section style={{ textAlign: "center", padding: "5rem 2rem" }}>
+        <section className={styles.hero}>
           <h1>
             Turn data into powerful{" "}
-            <span
-              style={{
-                color: "#00c9b7",
-                background: "rgba(0, 201, 183, 0.15)",
-                padding: "4px 24px",
-                borderRadius: "9999px",
-                fontWeight: "700",
-              }}
-            >
-              APIs
-            </span>
-            <span style={{ display: "block" }}>in minutes.</span>
+            <span className={styles.highlight}>APIs</span>
+            <span className={styles.block}>in minutes.</span>
           </h1>
 
-          <p style={{ fontSize: "1.25rem", marginTop: "1rem", color: "#aaa" }}>
+          <p>
             The modern platform for <strong>Schema Creation</strong>,{" "}
             <strong>Data Population</strong>, and{" "}
             <strong>API Generation</strong>.
           </p>
-          <div style={{ marginTop: "2rem" }}>
+
+          <div className={styles.buttons}>
             <Link
               className="button button--primary button--lg"
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.backgroundColor = "#0b9287")
-              }
               to="/docs/schema-creation"
             >
               Get Started
@@ -42,7 +32,7 @@ export default function Home() {
             <Link
               className="button button--secondary button--lg"
               style={{ marginLeft: "1rem" }}
-              to="/docs/intro"
+              to="/docs/introduction"
             >
               Learn More
             </Link>
@@ -50,30 +40,22 @@ export default function Home() {
         </section>
 
         {/* Features */}
-        <section
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "2rem",
-            flexWrap: "wrap",
-            padding: "4rem 2rem",
-            background: "#1a1a1a",
-          }}
-        >
-          <div style={{ flex: "1", minWidth: "250px" }}>
-            <h3>⚡ Fast</h3>
-            <p>
-              Generate schemas and APIs in minutes with streamlined workflows.
-            </p>
-          </div>
-          <div style={{ flex: "1", minWidth: "250px" }}>
-            <h3>🔒 Secure</h3>
-            <p>Enterprise-grade validation and access control.</p>
-          </div>
-          <div style={{ flex: "1", minWidth: "250px" }}>
-            <h3>🌍 Scalable</h3>
-            <p>Deploy from local dev to cloud-native platforms.</p>
-          </div>
+        <section className={styles.features}>
+          <FeatureCard
+            title="Schema Generation"
+            description="Generate and manage your database schemas effortlessly with our advanced Schema Generation Service."
+            icon={<Database size={48} color="#00c9b7" />}
+          />
+          <FeatureCard
+            title="Endpoint Generation"
+            description="Generate and manage your API endpoints effortlessly with our advanced Endpoint Generation Service."
+            icon={<Cloud size={48} color="#7b2ff7" />}
+          />
+          <FeatureCard
+            title="API Documentation"
+            description="Simplify your API integration with our comprehensive API Documentation Service."
+            icon={<FileText size={48} color="#f59e0b" />}
+          />
         </section>
       </main>
     </Layout>

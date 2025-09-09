@@ -1,5 +1,5 @@
 ---
-id: API Generation
+id: api-generation
 title: API Generation
 ---
 

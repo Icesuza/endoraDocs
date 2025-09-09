@@ -1,0 +1,56 @@
+.card {
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 2rem;
+  flex: 1;
+  min-width: 280px;
+  max-width: 360px;
+  text-align: left;
+  color: #eee;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  border: 1px solid #242424;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.icon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #7b2ff7, #00c9b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #aaa;
+}
+.icon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.icon svg {
+  stroke-width: 1.5;
+}
+
+/* Light mode overrides */
+html[data-theme='light'] .card {
+  background: #fff;
+  color: #222;
+  border: 1px solid#f3f3f3;
+}
+
+html[data-theme='light'] .card p {
+  color: #555;
+}
