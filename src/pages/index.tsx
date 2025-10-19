@@ -1,12 +1,48 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
+import Head from "@docusaurus/Head";
 import styles from "./index.module.css";
 import FeatureCard from "../components/featuredCard/featuredCard";
 import { Database, Cloud, FileText } from "lucide-react";
+
 export default function Home() {
   return (
-    <Layout title="Endora" description="Endora - Schema, Data & API Platform">
+    <Layout title="Endora — Smarter Backend, Faster Development">
+      <Head>
+        <meta
+          name="description"
+          content="Endora — Smarter Backend, Faster Development."
+        />
+        <meta
+          property="og:title"
+          content="Endora — Smarter Backend, Faster Development"
+        />
+        <meta
+          property="og:description"
+          content="Instantly generate scalable APIs with Endora."
+        />
+        <meta
+          property="og:image"
+          content="https://docs.endora.space/img/opengraph.png"
+        />
+        <meta property="og:url" content="https://docs.endora.space" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Endora — Smarter Backend, Faster Development"
+        />
+        <meta
+          name="twitter:description"
+          content="Instantly generate scalable APIs with Endora."
+        />
+        <meta
+          name="twitter:image"
+          content="https://docs.endora.space/img/opengraph.png"
+        />
+      </Head>
+
       <main>
         {/* Hero Section */}
         <section className={styles.hero}>

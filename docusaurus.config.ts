@@ -2,11 +2,9 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 const config: Config = {
   title: "Endora",
-  tagline: "Dinosaurs are cool",
+  tagline: "Smarter Backend, Faster Development",
   favicon: "img/logo.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -14,8 +12,7 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://docs.endora.space",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -70,7 +67,36 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/opengraph.png",
+    metadata: [
+      {
+        name: "description",
+        content: "Endora — Smarter Backend, Faster Development.",
+      },
+      {
+        name: "keywords",
+        content: "endora, api builder, backend generator, rest api, openapi",
+      },
+      {
+        property: "og:title",
+        content: "Endora — Smarter Backend, Faster Development",
+      },
+      {
+        property: "og:description",
+        content: "Instantly generate scalable APIs with Endora.",
+      },
+      {
+        property: "og:image",
+        content: "https://docs.endora.space/img/opengraph.png",
+      },
+      { property: "og:url", content: "https://docs.endora.space" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:image",
+        content: "https://docs.endora.space/img/opengraph.png",
+      },
+    ],
     navbar: {
       title: "Endora",
       logo: {
