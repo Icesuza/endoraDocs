@@ -5,28 +5,92 @@
  */
 @import "tailwindcss/utilities";
 
-
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #00c9b7;
-  --ifm-color-primary-dark: #0b9287;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #4633a7;
+  --ifm-color-primary-dark: #3f2e96;
+  --ifm-color-primary-darker: #382986;
+  --ifm-color-primary-darkest: #312475;
+  --ifm-color-primary-light: #5947b0;
+  --ifm-color-primary-lighter: #6b5cb9;
+  --ifm-color-primary-lightest: #7e70c1;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8fafc;
+  --ifm-font-color-base: #0f172a;
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.9);
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-border-color: rgb(226, 232, 240);
+
+  /* Additional custom colors */
+  --ifm-color-secondary: #00c9b7;
+  --ifm-color-secondary-dark: #00b5a5;
+  --ifm-color-secondary-darker: #00a192;
+  --ifm-color-secondary-darkest: #008d80;
+  --ifm-color-secondary-light: #1acebe;
+  --ifm-color-secondary-lighter: #33d4c5;
+  --ifm-color-secondary-lightest: #4dd9cd;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+[data-theme="dark"] {
+  --ifm-color-primary: #a399d3;
+  --ifm-color-primary-dark: #9085ca;
+  --ifm-color-primary-darker: #7e70c1;
+  --ifm-color-primary-darkest: #6b5cb9;
+  --ifm-color-primary-light: #b6aedd;
+  --ifm-color-primary-lighter: #c8c2e6;
+  --ifm-color-primary-lightest: #dbd7ef;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-background-color: #0e172b;
+  --ifm-background-surface-color: #0a1324;
+  --ifm-font-color-base: #f8fafc;
+  --ifm-navbar-background-color: #030711;
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-border-color: rgb(30, 41, 59);
+
+  /* Additional custom colors */
+  --ifm-color-secondary: #00c9b7;
+  --ifm-color-secondary-dark: #00b5a5;
+  --ifm-color-secondary-darker: #00a192;
+  --ifm-color-secondary-darkest: #008d80;
+  --ifm-color-secondary-light: #1acebe;
+  --ifm-color-secondary-lighter: #33d4c5;
+  --ifm-color-secondary-lightest: #4dd9cd;
+}
+
+.navbar__logo {
+  height: 3.5rem;
+  width: auto;
+}
+
+.navbar__brand {
+  height: 2rem;
+}
+
+.navbar {
+  height: var(--ifm-navbar-height);
+  padding: 2.3rem 2rem;
+  border-bottom: 1px solid var(--ifm-navbar-border-color);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 996px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar__logo {
+    height: 1.75rem;
+  }
+
+  .navbar__brand {
+    height: 1.75rem;
+  }
 }

@@ -1,20 +1,29 @@
 .card {
-  background: #1f1f1f;
-  border-radius: 12px;
-  padding: 2rem;
+  background: rgba(15, 23, 42, 0.4);
+  border-radius: 16px;
+  padding: 3rem 2rem;
   flex: 1;
-  min-width: 280px;
-  max-width: 360px;
-  text-align: left;
-  color: #eee;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 300px;
+  max-width: 380px;
+  transition: all 0.3s ease;
   text-align: center;
-  border: 1px solid #242424;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Light mode specific styles */
+[data-theme="light"] .card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--ifm-color-emphasis-900);
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.2),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  background: rgba(15, 23, 42, 0.8);
 }
 
 .icon {
@@ -45,12 +54,12 @@
 }
 
 /* Light mode overrides */
-html[data-theme='light'] .card {
+html[data-theme="light"] .card {
   background: #fff;
   color: #222;
   border: 1px solid#f3f3f3;
 }
 
-html[data-theme='light'] .card p {
+html[data-theme="light"] .card p {
   color: #555;
 }

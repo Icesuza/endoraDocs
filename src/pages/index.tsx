@@ -31,7 +31,6 @@ export default function Home() {
             </Link>
             <Link
               className="button button--secondary button--lg"
-              style={{ marginLeft: "1rem" }}
               to="/docs/introduction"
             >
               Learn More
@@ -49,12 +48,12 @@ export default function Home() {
           <FeatureCard
             title="Endpoint Generation"
             description="Generate and manage your API endpoints effortlessly with our advanced Endpoint Generation Service."
-            icon={<Cloud size={48} color="#7b2ff7" />}
+            icon={<Cloud size={48} color="#00c9b7" />}
           />
           <FeatureCard
             title="API Documentation"
             description="Simplify your API integration with our comprehensive API Documentation Service."
-            icon={<FileText size={48} color="#f59e0b" />}
+            icon={<FileText size={48} color="#00c9b7" />}
           />
         </section>
       </main>

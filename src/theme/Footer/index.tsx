@@ -13,14 +13,20 @@ export default function FooterWrapper(props: Props): ReactNode {
         <div className="container">
           {/* Logo */}
           <div>
-            <img src="/../img/logo.png" alt="logo" />
+            <a
+              href="https://endora.space"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/img/logo.png" alt="Endora Logo" />
+            </a>
           </div>
 
           {/* Links */}
           <div className={styles.link}>
             <Link to="/docs/introduction">Explore Docs</Link>
             <a
-              href="https://api-engine-ui-308354822720.asia-southeast1.run.app"
+              href="https://endora.space"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -29,7 +35,7 @@ export default function FooterWrapper(props: Props): ReactNode {
           </div>
 
           {/* Divider */}
-          <hr/>
+          <hr />
 
           {/* Copyright */}
           <div className={styles.copyright}>

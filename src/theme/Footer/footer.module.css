@@ -1,8 +1,9 @@
 /* dark mode */
 .footer {
-  background: #1e1e1e;
-  color: #eee;
-  padding: 2rem 0;
+  background: #030711;
+  color: #f8fafc;
+  padding: 3rem 0;
+  border-top: 1px solid rgb(30, 41, 59);
 }
 
 .footer img {
@@ -29,16 +30,24 @@
 }
 
 /* Light mode */
-html[data-theme='light'] .footer {
+html[data-theme="light"] .footer {
   background: #f9f9f9;
   color: #222;
+  border-color: rgb(226, 232, 240);
 }
 
-html[data-theme='light'] .footer hr {
+html[data-theme="light"] .footer hr {
   border-top: 1px solid #ddd;
 }
 
 .link a {
   color: #00c9b7;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
+.link a:hover {
+  color: #33d4c5;
+  text-decoration: none;
+}

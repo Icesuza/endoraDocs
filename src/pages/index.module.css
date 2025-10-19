@@ -1,6 +1,14 @@
 .hero {
   text-align: center;
-  padding: 5rem 2rem;
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: var(--ifm-navbar-height);
 }
 
 .hero h1 span.highlight {
@@ -17,12 +25,16 @@
 
 .hero p {
   font-size: 1.25rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   color: #666;
+  max-width: 800px;
 }
 
 .hero .buttons {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .hero .buttons .button:first-child:hover {
@@ -34,8 +46,16 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding: 4rem 2rem;
+  gap: 3rem;
+  padding: 10rem 2rem;
+  position: relative;
+  margin-top: -2rem; /* Negative margin to remove the gap */
+  background: transparent;
+}
+
+/* Dark mode specific styles */
+[data-theme="dark"] .features {
+  background: #0e172b;
 }
 
 .features div {
@@ -44,10 +64,10 @@
 }
 
 /* Dark Mode */
-html[data-theme='dark'] .hero p {
+html[data-theme="dark"] .hero p {
   color: #aaa;
 }
 
-html[data-theme='dark'] .features {
-  background: #1a1a1a;
+html[data-theme="dark"] .features {
+  background: #0e172b;
 }
