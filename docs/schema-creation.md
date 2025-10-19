@@ -43,10 +43,12 @@ After creating your schema, you can populate your tables with data in two ways:
 ## 🔧 Steps to Create a Schema
 
 1. Open your project folder  
-2. Create a new file: `schema.yaml`  
+2. Cleck  New Schema 
+![Schema](/img/createSchama.png)
 3. Define your tables and relationships  
-4. Save the file and run `npx schema-cli`  
-
+![Reletion](/img/defindrelation.png)
+4. And then check Save you will see 
+![Reletion](/img/over.png)
 :::tip
 Keep your schemas **small and modular**. This makes them easier to maintain.
 :::

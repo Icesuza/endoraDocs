@@ -1,17 +1,25 @@
 // sidebars.ts
-import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
+import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
-    'introduction',
+    "introduction",
+    "security-configuration",
     {
-      type: 'category',
-      label: 'Get Start',
+      type: "category",
+      label: "Schema Base",
       items: [
-        'schema-creation',
-        'populate-data',
-        'api-generation',
+        "schema-creation",
+        "Insert data",
+        "api-generation",
+        "api-doc",
+        "post-man",
       ],
+    },
+    {
+      type: "category",
+      label: "External DataBase ",
+      items: ["schema-creation"],
     },
   ],
 };
