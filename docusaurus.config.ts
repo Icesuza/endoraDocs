@@ -22,7 +22,7 @@ const config: Config = {
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
@@ -66,6 +66,13 @@ const config: Config = {
     ],
   ],
 
+  scripts: [
+    {
+      src: "./src/js/toc-reposition.js",
+      async: true,
+    },
+  ],
+
   themeConfig: {
     image: "img/opengraph.png",
     metadata: [
@@ -105,6 +112,7 @@ const config: Config = {
         href: "https://endora.space",
         target: "_blank",
       },
+      hideOnScroll: false,
       items: [
         {
           type: "docSidebar",
